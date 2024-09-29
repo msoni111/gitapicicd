@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
-      - uses: msoni111/s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master
         with: 
           args: --ac1 public-read --follow-symlinks --delete
         env:
